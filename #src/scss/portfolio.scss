@@ -1,0 +1,31 @@
+.portfolio {
+    background-color: #F6F6F6;
+    padding-top: 112px;
+}
+.portfolio__container {
+    text-align: center;
+}
+.container {
+}
+.portfolio__title {
+    font-size: 34px;
+    padding-bottom: 47px;
+}
+.portfolio__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio__item {
+    padding-bottom: 98px;
+}
+.portfolio__img-container {
+    padding-bottom: 45px;
+}
+.portfolio__imge {
+    width: 100%;
+}
+.portfolio__link {
+    text-decoration: underline;
+    cursor: pointer;
+}

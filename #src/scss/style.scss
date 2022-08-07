@@ -1,0 +1,16 @@
+@import 'null.scss';
+@import 'fonts.scss';
+@import 'denisnovik.scss';
+@import 'about-me.scss';
+@import 'skills.scss';
+@import 'portfolio.scss';
+@import 'contacts.scss';
+body {
+    font-family: "gilroy";
+    font-weight: bold;
+}
+.container {
+    max-width: 970px;
+    padding: 0 30px;
+    margin: 0 auto;
+}

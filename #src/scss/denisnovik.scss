@@ -1,0 +1,167 @@
+.denisnovik {
+}
+.denisnovik__container {
+}
+.denisnovik__header {
+    position: relative;
+}
+.denisnovik__navigation {
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    height: 88px;
+    font-size: 18px;
+    border-bottom: #828282 1px solid;
+}
+.denisnovik__navigation a {
+    transition: color 0.2s;
+    transition: transform 0.2s;
+    color: #828282;
+}
+.denisnovik__navigation a:hover {
+    color: black;
+    transform: scale(1.15,1.15);
+}
+.denisnovik__nav-item {
+    display: flex;
+    align-items: center;
+}
+.denisnovik__language-menu {
+    display: none;
+    position: absolute;
+    bottom: 700px;
+    right: 0px;
+    transform: rotate(90deg) translate(70vh, -80%);
+}
+.menu-icon {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 11;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+.menu-icon > span,
+.menu-icon::before,
+.menu-icon::after {
+    height: 20%;
+    width: 100%;
+    background-color: black;
+    transition: 0.2s;
+}
+.menu-icon::before,
+.menu-icon::after {
+    content: "";
+}
+.menu-icon > span {
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
+}
+.menu-icon::before {
+    position: absolute;
+    top: 0px;
+}
+.menu-icon::after {
+    position: absolute;
+    bottom: 0px;
+}
+.denisnovik__o-sebe {
+    // position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 40px 0 30px 0;
+}
+.denisnovik__name {
+    font-size: 48px;
+    line-height: 58px;
+    color: #070707;
+}
+.denisnovik__profesia {
+    font-family: "gilroy";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+}
+.denisnovik__language {
+    transform: rotate(-90deg) translate(40%, 150%);
+}
+.denisnovik__image-cont {
+    display: block;
+    box-sizing: content-box;
+    height: 388px;
+    max-width: 945px;
+    padding-bottom: 104px;
+}
+.denisnovik__image-max {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.denisnovik__image-min {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 425px) {
+    .denisnovik__language-menu {
+        display: block;
+    }
+    .menu-icon {
+        top: 65px;
+        display: flex;
+    }
+    .menu-icon_active > span {
+        opacity: 0;
+    }
+    .menu-icon_active::before,
+    .menu-icon_active::after {
+        background-color: #828282;
+    }
+    .menu-icon_active::before {
+        transform: rotate(45deg) translate(25%, 100%);
+    }
+    .menu-icon_active::after {
+        transform: rotate(-45deg) translate(25%, -100%);
+    }
+    .denisnovik__navigation {
+        // transform: translate(100%, 0);
+        font-size: 34px;
+        transition: 0.2s;
+        left: 100%;
+        background-color: #fff;
+        width: 100%;
+        padding: 66px 30px 0px 30px;
+        position: fixed;
+        flex-direction: column;
+        justify-content: start;
+        height: 812px;
+        .denisnovik__nav-item:not(:last-child) {
+            padding-bottom: 68px;
+        }
+    }
+    .denisnovik__navigation._active {
+        left: 0;
+    }
+    .denisnovik__header {
+        border-bottom: none;
+    }
+    .denisnovik__image-cont {
+        height: auto;
+    }
+    .denisnovik__language {
+        display: none;
+    }
+    .denisnovik__name {
+        padding-right: 30px;
+    }
+}
+@media (max-width: 368px) {
+    .denisnovik__name {
+        padding-bottom: 22px;
+    }
+}

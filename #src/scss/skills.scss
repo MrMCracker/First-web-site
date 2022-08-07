@@ -1,0 +1,81 @@
+.skills {
+    padding: 90px 0px 110px 0px;
+}
+.skills__container {
+    text-align: center;
+}
+.skills__title {
+    font-size: 34px;
+    line-height: 42px;
+    padding-bottom: 70px;
+}
+.skills__sub-title {
+    font-family: "gilroy";
+    font-weight: normal;
+    line-height: 22px;
+    font-size: 18px;
+    padding-bottom: 84px;
+}
+.skills__flex-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.skills__item {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 168px;
+    height: 208px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+.skills__item:not(:last-child) {
+    margin-bottom: 80px;
+}
+.skills-item__name {
+    color: #828282;
+}
+.skills-item__rating-box {
+    position: relative;
+    height: 26px;
+}
+.skills-item__rating {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.rating-item {
+    opacity: 0;
+    z-index: 5;
+    height: 100%;
+    width: 20%;
+}
+.skills-item__rating-active, .skills-item__rating-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 26px;
+}
+.skills-item__rating-back {
+    width: 100%;
+}
+.skills-item__rating-active {
+    color: red;
+    width: 70%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.skills-item__rating-back {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.skills-item__rating-active picture {
+    flex: 1 0 1.3em;
+}
+.skills-item__rating-back picture {
+    flex: 1 0 1.3em;
+}
